@@ -1,0 +1,195 @@
+     .sidebar {
+  width: 260px;
+  height: 100vh;
+
+  background: #040b14;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  padding-top: 30px;
+  text-align: center;
+
+  overflow-y: auto;
+
+  transition: all 0.3s ease;
+}
+
+/* Profile */
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+
+  object-fit: cover;
+  border-radius: 50%;
+
+  border: 6px solid #2c2f3f;
+
+  transition: 0.3s;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+.profile-name {
+  color: white;
+
+  margin-top: 15px;
+  margin-bottom: 25px;
+
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Social Icons */
+
+.social-links {
+  display: flex;
+  justify-content: center;
+
+  gap: 15px;
+
+  margin-bottom: 40px;
+}
+
+.social-links a {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #212431;
+  color: #ffffff;
+
+  text-decoration: none;
+  font-size: 20px;
+
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background: #149ddd;
+  transform: translateY(-4px);
+}
+
+/* Navigation */
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin: 18px 0;
+}
+
+.sidebar ul li a {
+  color: #b8c7d9;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 12px 30px;
+
+  font-size: 18px;
+  font-weight: 500;
+
+  transition: all 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  color: #149ddd;
+  padding-left: 40px;
+}
+
+.sidebar ul li a.active {
+  color: #149ddd;
+}
+
+.sidebar ul li a svg {
+  font-size: 18px;
+}
+
+/* Hamburger */
+
+.hamburger {
+  display: none;
+
+  position: fixed;
+  top: 15px;
+  left: 15px;
+
+  width: 45px;
+  height: 45px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #149ddd;
+  color: white;
+
+  font-size: 22px;
+  cursor: pointer;
+
+  z-index: 2000;
+
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Overlay */
+
+.sidebar-overlay {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.55);
+
+  z-index: 998;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: flex;
+  }
+
+  .sidebar {
+    width: 260px;
+    z-index: 999;
+
+    transform: translateX(-100%);
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  .profile-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-name {
+    font-size: 20px;
+  }
+
+  .sidebar ul li a {
+    font-size: 17px;
+  }
+}

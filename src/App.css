@@ -1,0 +1,16 @@
+   .layout {
+  display: flex;
+}
+
+.content {
+  margin-left: 260px;
+  width: calc(100% - 260px);
+}
+
+@media (max-width: 768px) {
+
+  .content {
+    margin-left: 0;
+    width: 100%;
+  }
+}

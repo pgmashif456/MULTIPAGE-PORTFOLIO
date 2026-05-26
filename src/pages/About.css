@@ -1,0 +1,202 @@
+  
+
+  .about {
+  padding: 60px;
+  background: #ffffff;
+  min-height: 100vh;
+}
+
+/* Heading */
+
+.about h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.line {
+  width: 70px;
+  height: 4px;
+  background: #149ddd;
+  margin: 15px 0 30px;
+}
+
+.about-text {
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+
+/* About Content */
+
+.about-content {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+/* Image */
+
+.about-image img {
+  width: 280px;
+  height: 360px;
+
+  object-fit: cover;
+
+  border-radius: 12px;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Right Side */
+
+.about-info {
+  flex: 1;
+}
+
+.about-info h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-size: 42px;
+  font-weight: 700;
+
+  color: #1a1a1a;
+}
+
+.italic {
+  font-style: italic;
+  color: #555;
+
+  line-height: 1.8;
+
+  margin-bottom: 30px;
+}
+
+/* Info Grid */
+
+.info-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 25px 50px;
+
+  margin-bottom: 35px;
+}
+
+.info-grid div {
+  font-size: 18px;
+  color: #333;
+}
+
+.info-grid strong {
+  color: #1a1a1a;
+}
+
+/* Description */
+
+.description {
+  color: #555;
+  line-height: 1.9;
+  font-size: 18px;
+}
+
+/* Skills Section */
+
+.skills {
+  margin-top: 90px;
+}
+
+.skills h2 {
+  font-size: 42px;
+  font-weight: 700;
+
+  color: #1a1a1a;
+}
+
+.skills-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 30px;
+
+  margin-top: 40px;
+}
+
+.skill-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skill-box span {
+  display: flex;
+  justify-content: space-between;
+
+  font-weight: 600;
+
+  color: #1a1a1a;
+}
+
+.progress {
+  width: 100%;
+  height: 10px;
+
+  background: #dce4ea;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+}
+
+.progress div {
+  height: 100%;
+  background: #149ddd;
+
+  border-radius: 20px;
+
+  transition: width 1s ease;
+}
+
+/* Skill Percentages */
+
+.html {
+  width: 95%;
+}
+
+.css {
+  width: 90%;
+}
+
+.js {
+  width: 85%;
+}
+
+.react {
+  width: 80%;
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
