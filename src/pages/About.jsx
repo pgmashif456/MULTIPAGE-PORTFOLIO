@@ -150,11 +150,11 @@ function About() {
             </div>
 
             <div>
-              <strong>Email:</strong> ashif@email.com
+              <strong>Email:</strong> ashifr479@gmail.com
             </div>
 
             <div>
-              <strong>City:</strong> Rajasthan, India
+              <strong>City:</strong> Bhopal, India
             </div>
 
             <div>
